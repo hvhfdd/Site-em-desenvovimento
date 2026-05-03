@@ -3,74 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CatolicConnect | Conectando Fé e Tecnologia</title>
-    <!-- Script corrigido para o Tailwind funcionar -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CatolicConnect | Software Developer</title>
+    <script src="https://tailwindcss.com"></script>
     <style>
         @import url('https://googleapis.com');
         body { font-family: 'Inter', sans-serif; }
+        .code-font { font-family: 'Fira Code', monospace; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-[#0f172a] text-slate-300">
 
-    <!-- Navbar -->
-    <nav class="p-6 bg-white shadow-md flex justify-between items-center border-b-4 border-yellow-500">
-        <h1 class="text-2xl font-extrabold text-blue-900 tracking-tight">Catolic<span class="text-yellow-500">Connect</span></h1>
-        <div class="space-x-6 hidden md:block">
-            <a href="#sobre" class="hover:text-blue-900 transition font-medium">Sobre</a>
-            <a href="#precos" class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition">Assinar Agora</a>
+    <!-- Header -->
+    <nav class="p-8 max-w-6xl mx-auto flex justify-between items-center">
+        <div class="text-xl font-bold text-white tracking-tighter">
+            <span class="text-blue-500">&lt;</span> CatolicConnect <span class="text-blue-500">/&gt;</span>
+        </div>
+        <div class="text-sm font-medium text-slate-400">
+            Disponível para novos projetos
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="py-24 px-6 text-center bg-gradient-to-b from-white to-slate-100">
-        <h2 class="text-4xl md:text-6xl font-black mb-6 text-blue-900">Tecnologia a serviço da <span class="text-yellow-500">Fé</span></h2>
-        <p class="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Unimos o desenvolvimento de ponta com o propósito de conectar comunidades e fortalecer a presença digital católica.
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto pt-20 pb-32 px-6">
+        <div class="code-font text-blue-400 mb-4 text-lg font-bold">Olá, eu sou programador.</div>
+        
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8 leading-none">
+            Especialista em <span class="text-blue-500">Integrações</span> e Soluções Digitais.
+        </h1>
+
+        <p class="text-xl text-slate-400 max-w-2xl leading-relaxed mb-12">
+            Desenvolvo aplicações modernas, focadas em performance e automação. Especialista em conectar negócios a APIs de pagamento e sistemas escaláveis.
         </p>
-    </header>
 
-    <!-- Checkout Section -->
-    <section id="precos" class="py-16 px-6">
-        <div class="max-w-md mx-auto p-10 bg-white border-2 border-slate-100 rounded-3xl shadow-2xl relative overflow-hidden">
-            <div class="absolute top-0 right-0 bg-yellow-500 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">Premium</div>
-            
-            <h3 class="text-2xl font-bold mb-2 text-blue-900">Consultoria Especializada</h3>
-            <p class="text-slate-500 mb-8 leading-snug">Sessão dedicada para desenvolvimento de projetos e arquitetura digital.</p>
-            
-            <div class="bg-blue-50 p-6 rounded-2xl mb-8 border border-blue-100">
-                <span class="text-xs text-blue-400 uppercase font-bold tracking-widest">Valor do Investimento</span>
-                <div class="text-4xl font-black text-blue-900 mt-1">R$ 50,00</div>
-                <p class="text-xs text-blue-400 mt-1 italic">*Pagamento único via Pix</p>
+        <!-- Habilidades -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+            <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700 text-center">
+                <span class="text-white font-bold block">Frontend</span>
+                <span class="text-xs text-slate-500 uppercase">React / Tailwind</span>
             </div>
-
-            <button id="btnPagar" class="w-full bg-blue-900 text-white font-black py-5 rounded-2xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-95">
-                GERAR PAGAMENTO VIA PIX
-            </button>
-            
-            <div class="mt-6 flex items-center justify-center gap-2 text-slate-400">
-                <svg xmlns="http://w3.org" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-                <span class="text-xs font-bold uppercase tracking-tighter">Ambiente Seguro e Criptografado</span>
+            <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700 text-center">
+                <span class="text-white font-bold block">Backend</span>
+                <span class="text-xs text-slate-500 uppercase">Node.js / APIs</span>
             </div>
-            
-            <p id="msgStatus" class="text-center mt-4 text-sm font-bold text-blue-600 animate-pulse"></p>
+            <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700 text-center">
+                <span class="text-white font-bold block">Pagamentos</span>
+                <span class="text-xs text-slate-500 uppercase">PIX / Checkout</span>
+            </div>
+            <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700 text-center">
+                <span class="text-white font-bold block">Database</span>
+                <span class="text-xs text-slate-500 uppercase">SQL / NoSQL</span>
+            </div>
         </div>
-    </section>
 
-    <!-- Rodapé -->
-    <footer class="py-12 text-center border-t border-slate-200">
-        <div class="mb-4">
-            <h4 class="font-bold text-blue-900">CatolicConnect</h4>
+        <!-- CTA -->
+        <div class="flex flex-wrap gap-6">
+            <a href="https://wa.me" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-500 transition shadow-lg shadow-blue-900/20">
+                Me chama no WhatsApp
+            </a>
+            <div class="flex items-center gap-2 text-slate-400">
+                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                <span class="text-sm font-medium">CNPJ: 55.565.045/0001-03</span>
+            </div>
         </div>
-        <div class="text-slate-500 text-xs space-y-2 leading-relaxed">
-            <p>© 2024 CatolicConnect - Todos os direitos reservados.</p>
-            <p class="font-bold">CNPJ: 55.565.045/0001-03</p>
-            <p>Contato suporte: <span class="text-blue-600">73 99971-2577</span></p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-12 px-8 text-center text-slate-500 text-sm">
+        <div class="max-w-6xl mx-auto">
+            <p class="font-bold text-slate-400 mb-2 italic">CatolicConnect</p>
+            <p>Especialista em Desenvolvimento de Software</p>
+            <p class="mt-4 opacity-50 uppercase tracking-[0.3em] text-[10px]">© 2026 - Código que gera resultados.</p>
         </div>
     </footer>
 
-    <script src="app.js"></script>
 </body>
 </html>
