@@ -3,78 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CatolicConnect | Software Developer</title>
-    <script src="https://tailwindcss.com"></script>
+    <title>Em Breve</title>
     <style>
-        @import url('https://googleapis.com');
-        body { font-family: 'Inter', sans-serif; }
-        .code-font { font-family: 'Fira Code', monospace; }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+        .loader {
+            margin: 20px auto;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
-<body class="bg-[#0f172a] text-slate-300">
-
-    <!-- Header -->
-    <nav class="p-8 max-w-6xl mx-auto flex justify-between items-center">
-        <div class="text-xl font-bold text-white tracking-tighter">
-            <span class="text-blue-500">&lt;</span> CatolicConnect <span class="text-blue-500">/&gt;</span>
-        </div>
-        <div class="text-sm font-medium text-slate-400">
-            Disponível para novos projetos
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="max-w-4xl mx-auto pt-20 pb-32 px-6">
-        <div class="code-font text-blue-400 mb-4 text-lg font-bold">Olá, eu sou programador.</div>
-        
-        <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8 leading-none">
-            Especialista em <span class="text-blue-500">Integrações</span> e Soluções Digitais.
-        </h1>
-
-        <p class="text-xl text-slate-400 max-w-2xl leading-relaxed mb-12">
-            Desenvolvo aplicações modernas, focadas em performance e automação. Especialista em conectar negócios a APIs de pagamento e sistemas escaláveis.
-        </p>
-
-        <!-- Habilidades -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-            <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700 text-center">
-                <span class="text-white font-bold block">Frontend</span>
-                <span class="text-xs text-slate-500 uppercase">React / Tailwind</span>
-            </div>
-            <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700 text-center">
-                <span class="text-white font-bold block">Backend</span>
-                <span class="text-xs text-slate-500 uppercase">Node.js / APIs</span>
-            </div>
-            <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700 text-center">
-                <span class="text-white font-bold block">Pagamentos</span>
-                <span class="text-xs text-slate-500 uppercase">PIX / Checkout</span>
-            </div>
-            <div class="bg-slate-800/50 p-4 rounded-xl border border-slate-700 text-center">
-                <span class="text-white font-bold block">Database</span>
-                <span class="text-xs text-slate-500 uppercase">SQL / NoSQL</span>
-            </div>
-        </div>
-
-        <!-- CTA -->
-        <div class="flex flex-wrap gap-6">
-            <a href="https://wa.me" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-500 transition shadow-lg shadow-blue-900/20">
-                Me chama no WhatsApp
-            </a>
-            <div class="flex items-center gap-2 text-slate-400">
-                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span class="text-sm font-medium">CNPJ: 55.565.045/0001-03</span>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="border-t border-slate-800 py-12 px-8 text-center text-slate-500 text-sm">
-        <div class="max-w-6xl mx-auto">
-            <p class="font-bold text-slate-400 mb-2 italic">CatolicConnect</p>
-            <p>Especialista em Desenvolvimento de Software</p>
-            <p class="mt-4 opacity-50 uppercase tracking-[0.3em] text-[10px]">© 2026 - Código que gera resultados.</p>
-        </div>
-    </footer>
-
+<body>
+    <div class="container">
+        <h1>Site Em Breve</h1>
+        <p>Estamos trabalhando em algo incrível. Aguarde!</p>
+        <div class="loader"></div>
+    </div>
 </body>
 </html>
