@@ -3,51 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ols soluções | Soluções Tech</title>
-    <script src="https://tailwindcss.com"></script>
+    <title>CatolicConnect | Conectando Fé e Tecnologia</title>
+    <!-- Script corrigido para o Tailwind funcionar -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://googleapis.com');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
     <!-- Navbar -->
-    <nav class="p-6 bg-white shadow-sm flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-green-600 italic">Desenvolvimento</h1>
+    <nav class="p-6 bg-white shadow-md flex justify-between items-center border-b-4 border-yellow-500">
+        <h1 class="text-2xl font-extrabold text-blue-900 tracking-tight">Catolic<span class="text-yellow-500">Connect</span></h1>
         <div class="space-x-6 hidden md:block">
-            <a href="#servicos" class="hover:text-green-600">Serviços</a>
-            <a href="#precos" class="hover:text-green-600 font-semibold text-green-700">Comprar Agora</a>
+            <a href="#sobre" class="hover:text-blue-900 transition font-medium">Sobre</a>
+            <a href="#precos" class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition">Assinar Agora</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="py-20 px-6 text-center">
-        <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Transformamos ideias em <span class="text-green-600">Código</span></h2>
-        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Soluções personalizadas de desenvolvimento para o seu negócio crescer no digital.</p>
+    <header class="py-24 px-6 text-center bg-gradient-to-b from-white to-slate-100">
+        <h2 class="text-4xl md:text-6xl font-black mb-6 text-blue-900">Tecnologia a serviço da <span class="text-yellow-500">Fé</span></h2>
+        <p class="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+            Unimos o desenvolvimento de ponta com o propósito de conectar comunidades e fortalecer a presença digital católica.
+        </p>
     </header>
 
     <!-- Checkout Section -->
-    <section id="precos" class="py-12 bg-white">
-        <div class="max-w-md mx-auto p-8 border rounded-2xl shadow-xl">
-            <h3 class="text-xl font-bold mb-4">Plano Consultoria Express</h3>
-            <p class="text-slate-500 mb-6">Sessão de 1 hora para alinhamento técnico e arquitetura de software.</p>
+    <section id="precos" class="py-16 px-6">
+        <div class="max-w-md mx-auto p-10 bg-white border-2 border-slate-100 rounded-3xl shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-yellow-500 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">Premium</div>
             
-            <div class="bg-slate-50 p-4 rounded-lg mb-6">
-                <span class="text-sm text-slate-400">Total a pagar:</span>
-                <div class="text-3xl font-bold text-green-600">R$ 50,00</div>
+            <h3 class="text-2xl font-bold mb-2 text-blue-900">Consultoria Especializada</h3>
+            <p class="text-slate-500 mb-8 leading-snug">Sessão dedicada para desenvolvimento de projetos e arquitetura digital.</p>
+            
+            <div class="bg-blue-50 p-6 rounded-2xl mb-8 border border-blue-100">
+                <span class="text-xs text-blue-400 uppercase font-bold tracking-widest">Valor do Investimento</span>
+                <div class="text-4xl font-black text-blue-900 mt-1">R$ 50,00</div>
+                <p class="text-xs text-blue-400 mt-1 italic">*Pagamento único via Pix</p>
             </div>
 
-            <button id="btnPagar" class="w-full bg-green-600 text-white font-bold py-4 rounded-xl hover:bg-green-700 transition transform hover:scale-105">
-                Pagar com Pix via AbacatePay
+            <button id="btnPagar" class="w-full bg-blue-900 text-white font-black py-5 rounded-2xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-95">
+                GERAR PAGAMENTO VIA PIX
             </button>
-            <p id="msgStatus" class="text-center mt-4 text-sm font-medium text-orange-500"></p>
+            
+            <div class="mt-6 flex items-center justify-center gap-2 text-slate-400">
+                <svg xmlns="http://w3.org" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+                <span class="text-xs font-bold uppercase tracking-tighter">Ambiente Seguro e Criptografado</span>
+            </div>
+            
+            <p id="msgStatus" class="text-center mt-4 text-sm font-bold text-blue-600 animate-pulse"></p>
         </div>
     </section>
 
-    <!-- Rodapé Requisitado para Aprovação -->
-    <footer class="py-10 text-center text-slate-400 text-xs">
-        <p>© 2024 olx soluções- Todos os direitos reservados.</p>
-        <p>CNPJ:55.565.045/0001-03 | Contato: 73999712577</p>
+    <!-- Rodapé -->
+    <footer class="py-12 text-center border-t border-slate-200">
+        <div class="mb-4">
+            <h4 class="font-bold text-blue-900">CatolicConnect</h4>
+        </div>
+        <div class="text-slate-500 text-xs space-y-2 leading-relaxed">
+            <p>© 2024 CatolicConnect - Todos os direitos reservados.</p>
+            <p class="font-bold">CNPJ: 55.565.045/0001-03</p>
+            <p>Contato suporte: <span class="text-blue-600">73 99971-2577</span></p>
+        </div>
     </footer>
 
     <script src="app.js"></script>
 </body>
 </html>
-
