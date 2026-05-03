@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ols soluções | Soluções Tech</title>
+    <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navbar -->
+    <nav class="p-6 bg-white shadow-sm flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-green-600 italic">Desenvolvimento</h1>
+        <div class="space-x-6 hidden md:block">
+            <a href="#servicos" class="hover:text-green-600">Serviços</a>
+            <a href="#precos" class="hover:text-green-600 font-semibold text-green-700">Comprar Agora</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="py-20 px-6 text-center">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Transformamos ideias em <span class="text-green-600">Código</span></h2>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Soluções personalizadas de desenvolvimento para o seu negócio crescer no digital.</p>
+    </header>
+
+    <!-- Checkout Section -->
+    <section id="precos" class="py-12 bg-white">
+        <div class="max-w-md mx-auto p-8 border rounded-2xl shadow-xl">
+            <h3 class="text-xl font-bold mb-4">Plano Consultoria Express</h3>
+            <p class="text-slate-500 mb-6">Sessão de 1 hora para alinhamento técnico e arquitetura de software.</p>
+            
+            <div class="bg-slate-50 p-4 rounded-lg mb-6">
+                <span class="text-sm text-slate-400">Total a pagar:</span>
+                <div class="text-3xl font-bold text-green-600">R$ 50,00</div>
+            </div>
+
+            <button id="btnPagar" class="w-full bg-green-600 text-white font-bold py-4 rounded-xl hover:bg-green-700 transition transform hover:scale-105">
+                Pagar com Pix via AbacatePay
+            </button>
+            <p id="msgStatus" class="text-center mt-4 text-sm font-medium text-orange-500"></p>
+        </div>
+    </section>
+
+    <!-- Rodapé Requisitado para Aprovação -->
+    <footer class="py-10 text-center text-slate-400 text-xs">
+        <p>© 2024 olx soluções- Todos os direitos reservados.</p>
+        <p>CNPJ:55.565.045/0001-03 | Contato: 73999712577</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
 
